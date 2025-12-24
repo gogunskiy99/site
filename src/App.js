@@ -3,19 +3,22 @@ import Header from "./Components/Header";
 import Home from "./pages/Home"
 import Contacts from "./pages/Contacts"
 import About from "./pages/About"
+import MyCarousel from "./Components/Carousel"
+import "./App.css"
 
 function App() {
   return (
   <Router>
     <Header/>
-      <div className="container mt-4">
+      <div>
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<><MyCarousel/> <Home/></>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contacts/>}/>
         </Routes>
       </div>
   </Router>
+    
   );
 }
 
