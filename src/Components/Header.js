@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 function Header() {
     return(
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar sticky="top" bg="dark" variant="dark" expand="lg">
             <Container>
                 <Navbar.Brand as={NavLink} to="/">My Site</Navbar.Brand>
                     <Navbar.Toggle/>
